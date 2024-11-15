@@ -7508,7 +7508,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create and activate a Python virtual environment. </span>
@@ -7686,12 +7686,29 @@ wrapt              1.16.0
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Comment in the code:</strong></p>
+<ul>
+<li>The polarity score ranges from [-1.0, 1.0]. A positive score indicates positive sentiment,
+a negative score indicates negative sentiment, and a score of 0 indicates neutral sentiment.</li>
+<li>Based on the polarity score calculated above, we can infer whether the lyrics have a more</li>
+<li>positive or negative connotation.</li>
+</ul>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
@@ -7735,12 +7752,6 @@ wrapt              1.16.0
     <span class="n">sentiment</span> <span class="o">=</span> <span class="s2">"neutral"</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The sentiment of the lyrics is </span><span class="si">{</span><span class="n">sentiment</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
-
-<span class="c1"># Comment in the code:</span>
-<span class="c1"># The polarity score ranges from [-1.0, 1.0]. A positive score indicates positive sentiment,</span>
-<span class="c1"># a negative score indicates negative sentiment, and a score of 0 indicates neutral sentiment.</span>
-<span class="c1"># Based on the polarity score calculated above, we can infer whether the lyrics have a more </span>
-<span class="c1"># positive or negative connotation.</span>
 </pre></div>
 </div>
 </div>
@@ -7923,8 +7934,7 @@ The sentiment of the lyrics is positive.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Function to Fetch and Save Song Lyrics to JSON Files
-This code block defines a function to retrieve lyrics for a specified song by an artist using the lyrics.ovh API. The lyrics are then saved to a JSON file. After defining the function, it is tested with four different songs.</p>
+<h3 id="Function-to-Fetch-and-Save-Song-Lyrics-to-JSON-Files">Function to Fetch and Save Song Lyrics to JSON Files<a class="anchor-link" href="#Function-to-Fetch-and-Save-Song-Lyrics-to-JSON-Files">¶</a></h3><p>This code block defines a function to retrieve lyrics for a specified song by an artist using the lyrics.ovh API. The lyrics are then saved to a JSON file. After defining the function, it is tested with four different songs.</p>
 </div>
 </div>
 </div>
@@ -7933,7 +7943,7 @@ This code block defines a function to retrieve lyrics for a specified song by an
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fetch_and_save_lyrics</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">song</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
@@ -8007,7 +8017,7 @@ Lyrics for 'Open the Gate' by Zach Bryan saved to 'open_gate.json'.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load SpaCy and add SpaCyTextBlob</span>
@@ -8072,7 +8082,7 @@ Polarity score for '28': 0.18259259259259256
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'The Polarity score for all of these songs are different then what I would have expected. Esspecially for the song "Maine", in the lyrics he \nexplains how Maines climate is not enjoyable, but he still wants to go there. The general tune of these songs also changes my perception of the \npolarity scores. Since spacytextblob is not taking this into account I could see how the polarity scores may be different than I expected. \n'</pre>
 </div>
@@ -8095,7 +8105,7 @@ Polarity score for '28': 0.18259259259259256
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>requests-json-nlp.ipynb
@@ -8112,7 +8122,7 @@ Polarity score for '28': 0.18259259259259256
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>[NbConvertApp] Converting notebook requests-json-nlp.ipynb to html
-[NbConvertApp] Writing 303875 bytes to requests-json-nlp.html
+[NbConvertApp] Writing 303878 bytes to requests-json-nlp.html
 </pre>
 </div>
 </div>
