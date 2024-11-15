@@ -65,4 +65,4 @@ Clone YOUR new repo down to your machine.
 * 4.Verify you have a professional README.md that introduces your GitHub repository and provides helpful information about your project.
 
 # Refrence : https://github.com/wmnlp-materials/json-sentiment
-### A special thanks to Denise Case for instruction and guidence 
+### A special thanks to Prof. Denise Case for instruction and guidence 
