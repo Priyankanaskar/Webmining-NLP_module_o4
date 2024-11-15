@@ -62,3 +62,7 @@ Clone YOUR new repo down to your machine.
 * 2. After executing, export each notebook to HTML.
 * 3. Commit and push your HTML files to your GitHub repo along with the executed notebooks. 
 * 4. Verify you have a professional README.md that introduces your GitHub repository and provides helpful information about your project.
+
+# Refrence : https://github.com/wmnlp-materials/json-sentiment
+### Specil Thanks:
+#### Denise Case for instruction and guidence 
